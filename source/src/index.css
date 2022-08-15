@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input {
+  outline: none;
+  color: white;
+  border: none;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+}
+
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(122, 159, 230);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 133, 221);
+}
+
+.mount {
+  animation: smooth 0.2s ease-in-out;
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+    /* transform: translateX(10px); */
+  }
+  to {
+    opacity: 100;
+  }
+}
